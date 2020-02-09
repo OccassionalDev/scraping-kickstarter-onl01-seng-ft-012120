@@ -38,7 +38,9 @@ def create_project_hash
       
       :description => project.css("p.bbcard_blurb").text,
       
-      :location => 
+      :location => project.css("ul.project-meta span.location-name").text,
+      
+      :percent_funded => 
       
       
       
