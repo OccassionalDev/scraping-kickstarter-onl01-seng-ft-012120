@@ -2,24 +2,6 @@
 require 'nokogiri'
 require 'pry'
 
-def create_project_hash
-  # write your code here
-  
-  html = File.read('fixtures/kickstarter.html')
-  
-  kickstarter = Nokogiri::HTML(html)
-  
-  projects = {} 
-  
-  kickstarter.css("li.project.grid_4").each do |project|
-    projects[project] = {}
-  end 
-  
-  projects 
-end
-
-create_project_hash
-
 #Projects:
 #kickstarter.css("li.project.grid_4")
 
@@ -38,3 +20,20 @@ create_project_hash
 #Percent:
 #project.css("ul.project-stats li.first.funded strong").text
 
+def create_project_hash
+  # write your code here
+  
+  html = File.read('fixtures/kickstarter.html')
+  
+  kickstarter = Nokogiri::HTML(html)
+  
+  projects = {} 
+  
+  kickstarter.css("li.project.grid_4").each do |project|
+    title = project.css("h2.bbcard_name stronga").text
+  end 
+  
+  projects 
+end
+
+create_project_hash
