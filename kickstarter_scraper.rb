@@ -28,5 +28,5 @@ create_project_hash
 #project.css("p.bbcard_blurb").text
 
 #Location: 
-#project.css("span.location-name")
+#project.css("span.location-name").text or ul.project-meta
 
