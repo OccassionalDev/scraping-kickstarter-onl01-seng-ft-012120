@@ -26,5 +26,5 @@ end
 #project.css("p.bbcard_blurb").text
 
 #Location: 
-#project.css("span.")
+#project.css("span.location-name")
 
