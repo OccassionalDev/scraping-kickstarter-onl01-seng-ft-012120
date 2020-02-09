@@ -18,3 +18,6 @@ end
 
 #Title: 
 #project.css("h2.bbcard_name strong a").text
+
+#Image:
+#
