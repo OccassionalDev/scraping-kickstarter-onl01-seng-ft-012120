@@ -34,7 +34,9 @@ def create_project_hash
     
     projects[title.to_sym] = {
       
-      :image_link => project.css("div.project-thumbnail")
+      :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
+      
+      :description => 
       
       
       
