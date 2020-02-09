@@ -21,3 +21,10 @@ end
 
 #Image:
 #project.css("div.project-thumbnail a img").attribute("src").value
+
+#Description:
+#project.css("p.bbcard_blurb").text
+
+#Location: 
+#
+
