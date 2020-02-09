@@ -20,4 +20,4 @@ end
 #project.css("h2.bbcard_name strong a").text
 
 #Image:
-#
+#project.css("div.project-thumbnail a img").attribute("src").value
