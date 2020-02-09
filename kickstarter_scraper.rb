@@ -28,7 +28,7 @@ create_project_hash
 #project.css("p.bbcard_blurb").text
 
 #Location: 
-#project.css("span.location-name").text or ul.project-meta
+#project.css("ul.project-meta span.location-name").text
 
 #Percent:
 #project.css("ul.project-stats li.first.funded strong").text
